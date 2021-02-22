@@ -5,6 +5,7 @@ import { EventDetailsComponent } from "./events/event-details/event-details.comp
 import { Error404Component } from "./errors/404.component";
 import { EventRouteActivator } from "./events/event-details/event-route-activator.service";
 import { EventListResolver } from "./events/event-list-resolver.service";
+import { CreateSessionComponent } from "./events/sessions/create-session.component";
 
 export const routes: Routes = [
   {
@@ -27,5 +28,6 @@ export const routes: Routes = [
     path: "user",
     loadChildren: () => import("./user/user.module").then(m => m.UserModule)
   },
-  { path: "", redirectTo: "events", pathMatch: "full" }
+  { path: "", redirectTo: "events", pathMatch: "full" },
+  { path: "sessions/new", component: CreateSessionComponent }
 ];
