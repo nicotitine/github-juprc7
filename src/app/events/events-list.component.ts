@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { EventService } from "./shared/event.service";
-
-declare let toastr;
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: "events-list",
@@ -22,7 +21,10 @@ declare let toastr;
 })
 export class EventsListComponent {
   events;
-  constructor(private eventService: EventService) {}
+  constructor(
+    private eventService: EventService,
+    private toastr: ToastrService
+  ) {}
 
   ngOnInit() {
     this.events = this.eventService.getEvents();
@@ -30,6 +32,6 @@ export class EventsListComponent {
   }
 
   handleThumbnailClick(name: string) {
-    toastr.success(name);
+    this.toastr.success(name);
   }
 }
