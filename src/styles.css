@@ -1,5 +1,5 @@
 /* Add application styles & imports to this file! */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~ngf-bootstrap/dist/bootstrap.min.css";
 .hoverwell:hover {
   background-color: #485563;
   cursor: pointer;
@@ -11,10 +11,6 @@
 
 .pointable {
   cursor: pointer;
-}
-
-body {
-  background-color: #566;
 }
 
 button {

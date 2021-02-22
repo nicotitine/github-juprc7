@@ -1,44 +1,42 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="navbar navbar-default">
 	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand">ngEvents</a>
+		</div>
 
-		<a class="navbar-brand">ngEvents</a>
-
-
-
-		<div class="collapse navbar-collapse justify-content-between">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" routerLink="/events">All Events</a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<a routerLink="/events/">All Events</a>
 				</li>
-				<li class="nav-item"><a routerLink="/events/new" class="nav-link" href="">Create Event</a></li>
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+				<li><a routerLink="/events/new">Create Event</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
 						Events
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
 						<li>
-							<a href="">Angular Connect</a>
+							<a>Angular Connect</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
-
-
-			<form id="searchForm" class="form-inline my-2 my-lg-0t">
-				<span class="navbar-text">
-			  <a>Welcome John</a>
-			</span>
-				<input
-            type="text"
-            class="form-control ml-3"
-            placeholder="Search Sessions"
-          />
-
-				<button class="btn btn-default">
+			<div class="navbar-header navbar-right">
+				<ul class="nav navbar-nav">
+					<li>
+						<a>Welcome John</a>
+					</li>
+				</ul>
+			</div>
+			<form id="searchForm" class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search Sessions" >
+        </div>
+					<button class="btn btn-default" >
           Search
         </button>
 			</form>
 		</div>
 	</div>
-</nav>
+</div>
