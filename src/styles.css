@@ -1,0 +1,39 @@
+/* Add application styles & imports to this file! */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+body {
+  background-color: #566;
+}
+
+button {
+  color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.toast-success {
+  background-color: #51a351;
+}
+.toast-error {
+  background-color: #bd362f;
+}
+.toast-info {
+  background-color: #2f96b4;
+}
+.toast-warning {
+  background-color: #f89406;
+}
