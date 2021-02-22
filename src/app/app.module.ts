@@ -18,6 +18,7 @@ import { routes } from "./routes";
 import { EventRouteActivator } from "./events/event-details/event-route-activator.service";
 import { CreateEventComponent } from "./events/create-event.component";
 import { EventListResolver } from "./events/event-list-resolver.service";
+import { AuthService } from "./user/auth.service";
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { EventListResolver } from "./events/event-list-resolver.service";
     EventService,
     EventRouteActivator,
     { provide: "canDeactivateCreateEvent", useValue: checkDirtyState },
-    EventListResolver
+    EventListResolver,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
